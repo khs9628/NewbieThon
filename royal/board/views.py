@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-
 from .models import Donkey, Health, Aicohol
 # Create your views here.
 
@@ -25,7 +24,7 @@ def medicine(request):
 
 def recipe(request):
     return render(request, "board/recipe.html")
-                  
+
 # 창 띄우기
 def home(request):
     donkeys = Donkey.objects
